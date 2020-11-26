@@ -1,0 +1,89 @@
+body {
+    background: rgb(36,0,26);
+    background: linear-gradient(90deg, rgba(36,0,26,1) 0%, rgba(174,0,71,1) 91%, rgb(190, 12, 74) 100%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto;
+}
+
+#calculator {
+    width: 320px;
+    height: 470px;
+    background-color: #1e2b33;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result {
+    outline: none;
+    text-align: right;
+    font-weight: bold;
+    font-size: 25px;
+    height: 60px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+.operator, .number, .empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 10px;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, .empty {
+    background-color: #eaedef;
+}
+
+.number, .operator {
+    cursor: pointer;
+}
+
+.operator:active, .number:active {
+    font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus {
+    outline: 0;
+}
+
+.number {
+    font-size: 20px;
+    color: #FFF;
+    background-color: rgb(71, 98, 180);
+}
+
+
+.operator {
+    color: #FFF;
+    font-size: 20px;
+    background-color: #d40aa2;
+}
+
+.number:hover {
+    background-color: rgb(25, 151, 201);
+}
+
+.operator:hover {
+    background-color: #b10c72;
+}
+
+#clear {
+    width: 129px;
+}
